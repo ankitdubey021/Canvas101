@@ -26,7 +26,6 @@ import kotlin.math.sin
 
 @Composable
 fun CanvasClock() {
-
     Box(
         modifier = Modifier.fillMaxSize(),
         contentAlignment = Alignment.Center
