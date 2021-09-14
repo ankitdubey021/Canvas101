@@ -1,11 +1,7 @@
 package com.ankitdubey.canvas101.ui.shapes
 
-import androidx.compose.animation.expandHorizontally
-import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.Card
-import androidx.compose.material.Switch
-import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -60,6 +56,13 @@ fun ComposePieChart() {
                     ),
                 )
             }
+        }
+        Card(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(start = 16.dp, end = 16.dp),
+        ) {
+            LineChart(strokeColor = Color(0xFF7e2828))
         }
     }
 }

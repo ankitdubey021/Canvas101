@@ -79,7 +79,7 @@ private fun GithubCat() {
             moveTo(0f, 0f)
             lineTo(0f, size.height)
             lineTo(size.width, size.height)
-            lineTo(size.height, 0f)
+            lineTo(size.width, 0f)
             close()
         }) {
 
