@@ -57,6 +57,13 @@ fun ComposePieChart() {
                 )
             }
         }
+        Card(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(start = 16.dp, end = 16.dp),
+        ) {
+            LineChart(strokeColor = Color(0xFF7e2828))
+        }
     }
 }
 
