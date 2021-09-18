@@ -8,16 +8,19 @@ package com.ankitdubey.canvas101
 enum class CardType(val value : String){
     CHARTS("Charts"),
     CLOCK("Clock"),
-    GIT_CAT("Github Cat")
+    GIT_CAT("Github Cat"),
+    DONUT_SHAPE("Sweet Donut")
 }
 
 val cards = listOf(
     CardType.GIT_CAT,
     CardType.CLOCK,
-    CardType.CHARTS
+    CardType.CHARTS,
+    CardType.DONUT_SHAPE
 )
 
 val cardsImage = hashMapOf(
     CardType.CHARTS to R.drawable.charts,
-    CardType.GIT_CAT to R.drawable.github_cat
+    CardType.GIT_CAT to R.drawable.github_cat,
+    CardType.DONUT_SHAPE to R.drawable.donut
 )

@@ -10,6 +10,7 @@ import com.ankitdubey.canvas101.cards
 import com.ankitdubey.canvas101.ui.components.MToolbar
 import com.ankitdubey.canvas101.ui.shapes.CanvasClock
 import com.ankitdubey.canvas101.ui.shapes.ComposePieChart
+import com.ankitdubey.canvas101.ui.shapes.DonutShape
 import com.ankitdubey.canvas101.ui.shapes.GithubCatScreen
 
 /**
@@ -30,6 +31,7 @@ fun ShapeScreen(navController: NavController, shapeType: String?) {
                 CardType.CHARTS -> ComposePieChart()
                 CardType.GIT_CAT -> GithubCatScreen()
                 CardType.CLOCK -> CanvasClock()
+                CardType.DONUT_SHAPE -> DonutShape()
             }
         }
     }
