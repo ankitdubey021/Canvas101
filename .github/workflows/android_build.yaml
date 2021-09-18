@@ -13,10 +13,19 @@ jobs:
       - name: Set Up JDK
         uses: actions/setup-java@v1
         with:
-          java-version: 1.8
+          java-version: 11
 
       - name: Run Tests
         run: ./gradlew test
 
       - name: Build Project
         run: ./gradlew assemble
+
+      - name: Build Apk
+        uses: svenstaro/upload-release-action@v1-release
+        with:
+            repo_token: ${{ secrets.ACCESS_TOKEN }}
+            file: app/build/outputs/apk/debug/app-debug.apk
+            asset_name: app.apk
+            tag: ${{ github.ref }}
+            overwrite: true
