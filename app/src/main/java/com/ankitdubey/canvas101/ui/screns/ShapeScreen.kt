@@ -8,10 +8,7 @@ import androidx.navigation.NavController
 import com.ankitdubey.canvas101.CardType
 import com.ankitdubey.canvas101.cards
 import com.ankitdubey.canvas101.ui.components.MToolbar
-import com.ankitdubey.canvas101.ui.shapes.CanvasClock
-import com.ankitdubey.canvas101.ui.shapes.ComposePieChart
-import com.ankitdubey.canvas101.ui.shapes.DonutShape
-import com.ankitdubey.canvas101.ui.shapes.GithubCatScreen
+import com.ankitdubey.canvas101.ui.shapes.*
 
 /**
  * Created by Ankit Dubey on 05,September,2021
@@ -32,6 +29,7 @@ fun ShapeScreen(navController: NavController, shapeType: String?) {
                 CardType.GIT_CAT -> GithubCatScreen()
                 CardType.CLOCK -> CanvasClock()
                 CardType.DONUT_SHAPE -> DonutShape()
+                CardType.STATE_PICKER -> StatePicker()
             }
         }
     }
